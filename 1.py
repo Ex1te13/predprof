@@ -15,6 +15,6 @@ with open("products.csv", encoding="utf-8-sig") as file:
     print(zakusk_tot)
 
 with open("products_new.csv", "w", encoding="utf-8-sig", newline="") as file1:
-    w = csv.writer(file1)
+    w = csv.writer(file1, delimiter=";")
     w.writerow(header)
     w.writerows(answer)
